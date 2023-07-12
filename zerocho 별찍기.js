@@ -80,3 +80,38 @@ for (var i = 1; i <= 5; i++) {
     }
     console.log(str);
 }
+
+// 출력예시 5번
+//    *
+//   ***
+//  *****
+// *******
+//*********
+// *******
+//  *****
+//   ***
+//    *
+for (var i = 1; i <= 9; i++) {
+    if (i % 2 === 1) {
+        var str = '';
+        for (var j = 1; j <= (9 - i) / 2; j++) {
+            str = str + '_';
+        }
+        for (var j = 1; j <= i; j++) {
+            str = str + '*';
+        }
+        console.log(str);
+    }
+}
+for (var i = 1; i <= 7; i++) {
+    if (i % 2 === 1) {
+        var str = '';
+        for (var l = -1; l < i - 1; l++) {
+            str = str + '_';
+        }
+        for (var l = 1; l <= (7 - i) + 1; l++) {
+            str = str + '*';
+        }
+        console.log(str);
+    }
+}
