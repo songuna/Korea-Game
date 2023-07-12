@@ -57,3 +57,26 @@ for (var i = 1; i <= 9; i++) {
         console.log(str);
     }
 }
+
+// 출력예시 4번
+//    *        *
+//    **      **
+//    ***    ***
+//    ****  ****
+//    **********
+for (var i = 1; i <= 5; i++) {
+    var str = '';
+    for (var l = 1; l <= i; l++) {
+        str = str + '*';
+    }
+    for (var l = 1; l <= 5 - i; l++) {
+        str = str + ' ';
+    }
+    for (var j = 1; j <= 5 - i; j++) {
+        str = str + ' ';
+    }
+    for (var j = 1; j <= i; j++) {
+        str = str + '*';
+    }
+    console.log(str);
+}
