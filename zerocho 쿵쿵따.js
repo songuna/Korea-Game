@@ -1,5 +1,4 @@
 let promptObj = prompt('몇명이 참가하시나요?');
-console.log(promptObj);
 
 if (promptObj !== null) {
     const title = document.querySelector(".title");
