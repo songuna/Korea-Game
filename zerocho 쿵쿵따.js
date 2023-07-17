@@ -17,15 +17,25 @@ if (promptObj !== null) {
     // 변수명 선언해서 html에서 input 불러오기 (id 불러오기)
     const btn = document.createElement('button');
     // 변수명 선언해서 html에서 bytton 불러오기 (id 불러오기)
+
+
+
+    // js로 html 만들기
     label.innerText = '쿵쿵따 게임 시작하기'
+    // label에 innertext 사용해서 '쿵쿵따 게임 시작하기' 메인화면에 뜸
     input.setAttribute('type', 'text')
+    // input에 type, text 속성값 얻음, 메인화면에 생성
     input.setAttribute('id', 'Game')
+    // input에 id, Game 속성값 얻음, 메인화면에 생성
     btn.innerText = " 확인"
+    // button에 innertext 사용해서 '확인' 메인화면에 뜸
     title.append(label, input, btn)
+    // js에 html 요소 생성하기
 
 
 
     btn.addEventListener("click", function () {
+
         const Game = document.querySelector("#Game");
         if (Game.value.length > 3) {
             alert("세글자 미만이여야 합니다. 다시 입력해주세요");
