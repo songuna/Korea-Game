@@ -33,13 +33,16 @@ if (promptObj !== null) {
     // js에 html 요소 생성하기
 
 
-
+    // 3글자 이상 단어에 '확인' 버튼 누르면 alert 함수 생성
     btn.addEventListener("click", function () {
-
+        // botton에 'click'할때 호출함수 설정
         const Game = document.querySelector("#Game");
+        // 변수명 선언해서 Game 불러오기
         if (Game.value.length > 3) {
             alert("세글자 미만이여야 합니다. 다시 입력해주세요");
         }
+        // 조건문 사용해서 입력칸에 사용자가 쓴 단어 3글자 이상이면 alert 함수 생성,
+        // 3글자가 맞으면 조건문 사용 안함(?)
     });
 
 }
